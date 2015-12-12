@@ -1,0 +1,21 @@
+package ru.javabegin.training.fastjava2.shop.client;
+
+public class VipVisitor extends BaseVisitor {
+
+    //private String name; не нужно дублировать переменную, она уже есть в ро...
+    private float discount;
+
+    @Override
+    public void buy() {
+        if (!checkDiscount()) {
+            super.buy();
+        }else{
+            //купить со скидкой
+        }
+
+    }
+
+    private boolean checkDiscount() {
+        return discount>0;
+    }
+}
