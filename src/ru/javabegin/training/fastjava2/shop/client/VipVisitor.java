@@ -1,6 +1,8 @@
 package ru.javabegin.training.fastjava2.shop.client;
 
-public class VipVisitor extends BaseVisitor {
+import ru.javabegin.training.fastjava2.shop.interfaces.GoodsInterface;
+
+public class VipVisitor extends AbstractVisitor {
 
     //private String name; не нужно дублировать переменную, она уже есть в ро...
     private float discount;
@@ -18,4 +20,5 @@ public class VipVisitor extends BaseVisitor {
     private boolean checkDiscount() {
         return discount>0;
     }
+
 }

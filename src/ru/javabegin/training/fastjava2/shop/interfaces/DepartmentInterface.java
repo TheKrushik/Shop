@@ -6,7 +6,7 @@ public interface DepartmentInterface {
 
     String getName();
 
-    ArrayList<EmployeeInterface> getEmployeeList();
+    ArrayList<StaffInterface> getEmployeeList();
 
     ArrayList<GoodsInterface> getGoodsList();
 

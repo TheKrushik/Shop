@@ -1,6 +1,6 @@
 package ru.javabegin.training.fastjava2.shop.interfaces;
 
-public interface EmployeeInterface {
+public interface StaffInterface {
 
     String getName();
 

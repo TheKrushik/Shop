@@ -2,8 +2,9 @@ package ru.javabegin.training.fastjava2.shop;
 
 import ru.javabegin.training.fastjava2.shop.interfaces.DepartmentInterface;
 import ru.javabegin.training.fastjava2.shop.interfaces.VisitorInterface;
-import ru.javabegin.training.fastjava2.shop.service.Administrator;
+import ru.javabegin.training.fastjava2.shop.staff.Administrator;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class SalesRoom {
@@ -15,4 +16,6 @@ public class SalesRoom {
     private ArrayList<VisitorInterface> visitorList;
 
     private Administrator administrator;
+
+    File file;
 }

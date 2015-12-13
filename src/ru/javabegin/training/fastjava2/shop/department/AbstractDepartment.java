@@ -1,16 +1,15 @@
 package ru.javabegin.training.fastjava2.shop.department;
 
 import ru.javabegin.training.fastjava2.shop.interfaces.DepartmentInterface;
-import ru.javabegin.training.fastjava2.shop.interfaces.EmployeeInterface;
+import ru.javabegin.training.fastjava2.shop.interfaces.StaffInterface;
 import ru.javabegin.training.fastjava2.shop.interfaces.GoodsInterface;
-import ru.javabegin.training.fastjava2.shop.service.Administrator;
 
 import java.util.ArrayList;
 
-public abstract class BaseDepartment implements DepartmentInterface {
+public abstract class AbstractDepartment implements DepartmentInterface {
 
     private String name;
-    private ArrayList<EmployeeInterface> employeeList;
+    private ArrayList<StaffInterface> employeeList;
     private ArrayList<GoodsInterface> goodsList;
 
 
@@ -24,11 +23,11 @@ public abstract class BaseDepartment implements DepartmentInterface {
     }
 
     @Override
-    public ArrayList<EmployeeInterface> getEmployeeList() {
+    public ArrayList<StaffInterface> getEmployeeList() {
         return employeeList;
     }
 
-    public void setEmployeeList(ArrayList<EmployeeInterface> employeeList) {
+    public void setEmployeeList(ArrayList<StaffInterface> employeeList) {
         this.employeeList = employeeList;
     }
 
