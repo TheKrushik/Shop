@@ -9,6 +9,8 @@ import java.util.ArrayList;
 
 public class SalesRoom {
 
+    public static final String SHOP_NAME="technodom";
+
     private ArrayList<DepartmentInterface> departmentList; //в каждом департаменте имеются свои сотрудники
 
     private String name;
@@ -17,5 +19,5 @@ public class SalesRoom {
 
     private Administrator administrator;
 
-    File file;
+
 }

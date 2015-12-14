@@ -5,6 +5,8 @@ import ru.javabegin.training.fastjava2.shop.interfaces.GoodsInterface;
 
 public abstract class AbstractGoods implements GoodsInterface {
 
+    public static final int DEFAULT_GUARANEE = 2;
+
     public AbstractGoods() {
     }
 
@@ -23,7 +25,9 @@ public abstract class AbstractGoods implements GoodsInterface {
 
     private String company;
 
-
+    public static void print(String massage){
+        System.out.println("massage = " + massage);
+    }
 
     @Override
     public double getPrice() {

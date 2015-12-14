@@ -4,9 +4,11 @@ import ru.javabegin.training.fastjava2.shop.interfaces.BankInterface;
 
 public abstract class AbstractBank implements BankInterface {
 
+    //количество заявок по всем банкам(можно также реализовать через коллекцию)
+    public static int requestCount;
+
     public AbstractBank(String name, String creditDescription) {
         this.name = name;
-        this.creditDescription = creditDescription;
     }
 
     private String name;
@@ -16,7 +18,7 @@ public abstract class AbstractBank implements BankInterface {
 
     @Override
     public void checkInfo() {
-
+        requestCount++;
     }
 
     @Override
