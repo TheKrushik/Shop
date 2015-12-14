@@ -4,7 +4,7 @@ import ru.javabegin.training.fastjava2.shop.interfaces.GoodsInterface;
 
 public class VipVisitor extends AbstractVisitor {
 
-    //private String name; не нужно дублировать переменную, она уже есть в ро...
+    //private String name; РЅРµ РЅСѓР¶РЅРѕ РґСѓР±Р»РёСЂРѕРІР°С‚СЊ РїРµСЂРµРјРµРЅРЅСѓСЋ, РѕРЅР° СѓР¶Рµ РµСЃС‚СЊ РІ СЂРѕ...
     private float discount;
 
 
@@ -14,7 +14,7 @@ public class VipVisitor extends AbstractVisitor {
         if (!checkDiscount()) {
             super.buy(goods);
         }else{
-            //купить со скидкой
+            //РєСѓРїРёС‚СЊ СЃРѕ СЃРєРёРґРєРѕР№
         }
 
     }
