@@ -29,7 +29,7 @@ public class Main {
 //        commonVisitor.buy(subwoofer);
 
         Sberbank sberbank = new Sberbank("Sberbank", "test desc");
-        sberbank.checkInfo();
+        sberbank.checkInfo(true);
         sberbank.checkInfo();
         sberbank.checkInfo();
 
@@ -37,7 +37,7 @@ public class Main {
         vtb.checkInfo();
         vtb.checkInfo();
 
-        System.out.println("Sberbank.requestCount = " + Sberbank.requestCount);
+        System.out.println("asDASD");
 
     }
 }
