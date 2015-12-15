@@ -16,4 +16,13 @@ public class Sberbank extends AbstractBank {
     public void giveCredit() {
         //доработанная реализация
     }
+
+    //сбербанк умеет также рассматривать срочные заявки с помощью перегруженного метода
+    public void checkInfo(boolean critical){
+        System.out.println("sberbank");
+    }
+
+//    public String checkInfo(){
+//        return "asdasd";
+//    }
 }
