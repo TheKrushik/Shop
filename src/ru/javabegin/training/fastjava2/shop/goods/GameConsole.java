@@ -4,6 +4,10 @@ public class GameConsole extends ElectronicDevice {
 
     private int ram;
 
+    public GameConsole(String xbox, int i) {
+
+    }
+
     public void loadGame(){
 
     }

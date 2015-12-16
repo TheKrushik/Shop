@@ -14,6 +14,13 @@ public abstract class AbstractGoods implements GoodsInterface {
         this.name = name;
     }
 
+    public AbstractGoods(double price, boolean hasGuarantee, String name, String company) {
+        this.price = price;
+        this.hasGuarantee = hasGuarantee;
+        this.name = name;
+        this.company = company;
+    }
+
     //свойства, которые будут иметь все товары
     private double price;
 
@@ -25,9 +32,8 @@ public abstract class AbstractGoods implements GoodsInterface {
 
     private String company;
 
-    public static void print(String massage){
-        System.out.println("massage = " + massage);
-    }
+
+
 
     @Override
     public double getPrice() {

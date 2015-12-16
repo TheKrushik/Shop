@@ -1,16 +1,23 @@
 package ru.javabegin.training.fastjava2.shop.department;
 
 import ru.javabegin.training.fastjava2.shop.interfaces.DepartmentInterface;
-import ru.javabegin.training.fastjava2.shop.interfaces.StaffInterface;
+import ru.javabegin.training.fastjava2.shop.interfaces.EmployeeInterface;
 import ru.javabegin.training.fastjava2.shop.interfaces.GoodsInterface;
 
 import java.util.ArrayList;
 
 public abstract class AbstractDepartment implements DepartmentInterface {
 
+    public AbstractDepartment() {
+    }
+
+    public AbstractDepartment(String name) {
+        this.name = name;
+    }
+
     private String name;
-    private ArrayList<StaffInterface> employeeList;
-    private ArrayList<GoodsInterface> goodsList;
+    private ArrayList<EmployeeInterface> employeeList = new ArrayList<EmployeeInterface>();
+    private ArrayList<GoodsInterface> goodsList = new ArrayList<GoodsInterface>();
 
 
     @Override
@@ -23,11 +30,11 @@ public abstract class AbstractDepartment implements DepartmentInterface {
     }
 
     @Override
-    public ArrayList<StaffInterface> getEmployeeList() {
+    public ArrayList<EmployeeInterface> getEmployeeList() {
         return employeeList;
     }
 
-    public void setEmployeeList(ArrayList<StaffInterface> employeeList) {
+    public void setEmployeeList(ArrayList<EmployeeInterface> employeeList) {
         this.employeeList = employeeList;
     }
 
@@ -36,7 +43,17 @@ public abstract class AbstractDepartment implements DepartmentInterface {
         return goodsList;
     }
 
-    public void setGoodsList(ArrayList<GoodsInterface> goodsLkist) {
+    public void setGoodsList(ArrayList<GoodsInterface> goodsList) {
         this.goodsList = goodsList;
+    }
+
+    public void addEmployee(EmployeeInterface employee){
+        employee.setDepartment(this);
+        employeeList.add(employee);
+    }
+
+    public void addGoods(GoodsInterface goods){
+        goods.setDepartment(this);// при добавлении товара для него автоматически присваивается департамент
+        goodsList.add(goods);
     }
 }

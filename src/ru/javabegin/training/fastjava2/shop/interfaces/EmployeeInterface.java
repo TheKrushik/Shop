@@ -1,11 +1,15 @@
 package ru.javabegin.training.fastjava2.shop.interfaces;
 
-public interface StaffInterface {
+import ru.javabegin.training.fastjava2.shop.department.AbstractDepartment;
+
+public interface EmployeeInterface {
 
     String getName();
 
     DepartmentInterface getDepartment();
 
     boolean isFree();
+
+
 
 }

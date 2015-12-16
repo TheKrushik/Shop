@@ -1,9 +1,16 @@
-package ru.javabegin.training.fastjava2.shop.staff;
+package ru.javabegin.training.fastjava2.shop.service;
 
 import ru.javabegin.training.fastjava2.shop.interfaces.DepartmentInterface;
-import ru.javabegin.training.fastjava2.shop.interfaces.StaffInterface;
+import ru.javabegin.training.fastjava2.shop.interfaces.EmployeeInterface;
 
-public abstract class AbstractStaff implements StaffInterface {
+public abstract class AbstractEmployee implements EmployeeInterface {
+
+    public AbstractEmployee(){
+    }
+
+    public AbstractEmployee(String name) {
+        this.name = name;
+    }
 
     private String name;
     private DepartmentInterface department;

@@ -7,6 +7,9 @@ public class VipVisitor extends AbstractVisitor {
     //private String name; не нужно дублировать переменную, она уже есть в ро...
     private float discount;
 
+    public VipVisitor(String джон, int i) {
+
+    }
 
 
     @Override

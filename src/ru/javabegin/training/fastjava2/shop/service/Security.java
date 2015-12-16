@@ -1,6 +1,6 @@
-package ru.javabegin.training.fastjava2.shop.staff;
+package ru.javabegin.training.fastjava2.shop.service;
 
-public class Security extends AbstractStaff {
+public class Security extends AbstractEmployee {
 
     public void CheckVisitor(){
 
